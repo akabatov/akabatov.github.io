@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0; height: 100%; overflow: hidden;
+}
+
+nav{
+  min-height: 10vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur{
+  background-color: rgb(138, 137, 137);
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  width: 41%;
+  height: 80%;
+  top: 50%;
+  right: 10%;
+  transform: translate(-0%, -50%);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.logo-1, .logo-2{
+  font-size: 1rem;
+  color: rgb(33,33,33);
+  overflow: hidden;
+  margin-right: 0.4rem;
+}
+
+.hero{
+  height: 80vh;
+  margin: 0% 10%;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta{
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-0%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index:2;
+}
+
+@media screen and (max-width: 800px){
+  .cta{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .blur{
+    opacity:0;
+  }
+
+  .svg-container{
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    right: 10%;
+  }
+  .svg-container-left{
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 10%;
+  }
+  .education-description{
+    margin-top: 1rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  
+
+  .songs-gallery{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .about-me-img{
+    opacity: 0;
+  }
+}
+
+@media (max-height: 300px){
+  .cta{
+    opacity: 0;
+  }
+}
+
+.cta2, .cta6{
+  color: rgb(247, 0, 0);
+}
+
+.cta-text{
+  display: flex;
+  font-size: 2rem;
+}
+
+.cta-text h2{
+  overflow: hidden;
+}
+.cta-text h2{
+  overflow: hidden;
+}
+
+.cta-text span{
+  padding: 0.4rem;
+  display: block;
+  text-shadow: rgba(0,0,0, 0.4) 0px 0px 20px;
+}
+
+.cta-btn {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  background: white;
+  font-family: "Poppins";
+  border-radius: 0.3rem;
+  color: rgb(33,33,33);
+  border: none;
+  font-size: 0.7rem;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width:100%;
+}
+
+.about-me-title{
+  color: white;
+  text-align: left;
+  vertical-align: middle;
+  padding: 2rem;
+  z-index: 5;
+}
+
+.about-me-music{
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem;
+  z-index: 5;
+}
+
+.about-me-description{
+  margin-top: 7rem;
+}
+
+.img-container{
+  position: absolute;
+  right: 5%;
+  top:55%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 25%;
+  z-index: 5;
+}
+
+.about-me-img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 5rem;
+}
+
+.home, .notifications, .messages{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 0;
+}
+
+.home-title, .notifications-title, .messages-title{
+  padding-left : 2rem;
+  font-size: 1rem;
+  opacity: 0;
+}
+
+.circle-3{
+  position: absolute;
+  top: 90%;
+  right: 2%;
+  transform: translate(-50%, -50%) scale(2.5);
+  z-index: 1;
+}
+
+.circle-1{ 
+  /* display: none; */
+  position: absolute;
+  top: 90%;
+  right: 1%;
+  scale: 1.5;
+}
+
+.circle-2{
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  scale: 1.2
+}
+
+.showcase-arrow{
+  position: absolute;
+  right: 10%;
+  top: 15%;
+}
+
+.showcase-arrow-left{
+  transform: scale(-1,1);
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.education-description{
+  margin-top: 1rem;
+  width: 100%;
+  color: white;
+  display: grid;
+  padding: 0% 5%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 2rem;
+}
+
+.nl, .fl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin: 2rem;  
+}
+
+.college-img{
+  margin-top: 7rem;
+  opacity: 0.8;
+  scale: 1.2;
+}
+
+.uni-img{
+  margin-top: 3rem;
+  opacity: 0.8;
+  position: absolute;
+  scale: 0.7;
+
+}
+
+.song-card{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  opacity: 0 ;
+}
+.song-card h2{
+  margin-top: 1rem;
+}
+
+.songs-gallery{
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  padding: 0% 15%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.song1, .song2{
+  margin-top: 0.5rem;
+}
+.song2{
+  margin-bottom: 1rem;
+}
+
+.music-img{
+  object-fit: cover;
+  width: 300px;
+  border-radius: 5rem;
+  height:200px;
+}
+
